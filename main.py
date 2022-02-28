@@ -23,9 +23,7 @@ def main():
             print("Please fix it!")
             exit()
 
-        if int(arr[count]):
-            break
-        else:
+        if arr[count-1].isdigit():
             a = " ".join(arr)
             print("Your input must be a prefix (starting with an operator), as an example:")
             print("* 2 + 3 4")
@@ -33,6 +31,8 @@ def main():
             print("Please fix it!")
             exit()
 
+        break
+        
     arr.reverse()
 
     count = 0
